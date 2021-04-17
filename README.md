@@ -17,7 +17,9 @@
 
 ## Localhost
 
-- To run the project on localhost, run `npm run start` in your terminal.
+- To run the project on localhost:
+  - Rename `.env.SAMPLE` to `.env` and update the values of the variables `NEXT_PUBLIC_SANITY_PROJECT_ID` and `NEXT_PUBLIC_SANITY_API_TOKEN`.
+  - Execute `npm run start` in your terminal.
 
 ## TODO
 
