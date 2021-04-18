@@ -24,7 +24,8 @@
 
 ## TODO
 
-- Pagination
+- Slugify URL (post title)
+- Pagination (homepage)
 - Open Graph meta tags
 - Sitemap (using `next-sitemap`)
 - Tracking - Google Analytics (using `react-ga`)

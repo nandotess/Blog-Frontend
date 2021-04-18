@@ -30,7 +30,7 @@ export default function Posts({ posts }) {
     <section>
       {posts &&
         posts.map((post, i) => (
-          <Link key={i} href={`/post/${post.slug.current}`} passHref={true}>
+          <Link key={i} href={`/post/${post._id}`} passHref={true}>
             <Row>
               <Post post={post} />
             </Row>

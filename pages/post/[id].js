@@ -10,14 +10,14 @@ import Post from '../../components/Post';
 
 const PostPage = ({ post: initialPost = {}, preview }) => {
   const router = useRouter();
-  const { slug } = router.query;
+  const { id } = router.query;
 
-  if (!router.isFallback && !initialPost.slug) {
+  if (!router.isFallback && !initialPost._id) {
     return <ErrorPage statusCode={404} />;
   }
 
   const { data: post } = usePreviewSubscription(POST_QUERY, {
-    params: { slug },
+    params: { id },
     initialData: initialPost,
     enabled: preview
   });
@@ -45,10 +45,10 @@ PostPage.propTypes = {
 };
 
 export async function getStaticProps({ params, preview = false }) {
-  const slug = params.slug || '';
-  const post = await getClient(preview).fetch(POST_QUERY, { slug });
+  const id = params.id || '';
+  const post = await getClient(preview).fetch(POST_QUERY, { id });
 
-  if (!post.slug) {
+  if (!post._id) {
     return {
       notFound: true
     };
@@ -64,7 +64,7 @@ export async function getStaticPaths() {
   const posts = await sanityClient.fetch(ALL_POSTS_QUERY);
 
   const paths = posts.map((post) => ({
-    params: { slug: '' + post.slug.current }
+    params: { id: post._id }
   }));
 
   return { paths, fallback: true };

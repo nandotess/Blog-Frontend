@@ -88,7 +88,7 @@ export default function Post({ post }) {
           <Date dateTime={formatDate(post.publishedAt, 'iso')}>
             {formatDate(post.publishedAt)}
           </Date>
-          <Author>By {post.author}</Author>
+          <Author>By {post.author.displayName}</Author>
         </ColumnRight>
       </Row>
       {post.body && (
