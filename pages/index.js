@@ -10,10 +10,10 @@ const IndexPage = ({ posts = [], preview }) => {
   const description = title;
 
   return (
-    <>
+    <React.Fragment>
       <HeadMetatags title={title} description={description} />
       <Posts posts={posts} />
-    </>
+    </React.Fragment>
   );
 };
 

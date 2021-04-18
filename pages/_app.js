@@ -14,7 +14,7 @@ Router.events.on('routeChangeError', () => NProgress.done());
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <React.Fragment>
       <GoogleFonts
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap"
         key="fonts"
@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }) {
       <Page>
         <Component {...pageProps} />
       </Page>
-    </>
+    </React.Fragment>
   );
 }
 

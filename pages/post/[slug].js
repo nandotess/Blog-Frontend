@@ -26,16 +26,16 @@ const PostPage = ({ post: initialPost = {}, preview }) => {
   const description = title;
 
   return (
-    <>
+    <React.Fragment>
       {router.isFallback ? (
         <p>Loading...</p>
       ) : (
-        <>
+        <React.Fragment>
           <HeadMetatags title={title} description={description} />
           <Post post={post} />
-        </>
+        </React.Fragment>
       )}
-    </>
+    </React.Fragment>
   );
 };
 

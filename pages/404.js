@@ -6,10 +6,10 @@ const NotFoundPage = () => {
   const description = title;
 
   return (
-    <>
+    <React.Fragment>
       <HeadMetatags title={title} description={description} />
       <h1>{title}</h1>
-    </>
+    </React.Fragment>
   );
 };
 
