@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ErrorPage from 'next/error';
 import { useRouter } from 'next/router';
-import { getClient, sanityClient } from '../../lib/sanity.server';
+import { getClient, client } from '../../lib/sanity.server';
 import { usePreviewSubscription } from '../../lib/sanity';
 import { ALL_POSTS_QUERY, POST_QUERY } from '../../lib/sanity.queries';
 import HeadMetatags from '../../components/HeadMetatags';
@@ -61,7 +61,7 @@ export async function getStaticProps({ params, preview = false }) {
 }
 
 export async function getStaticPaths() {
-  const posts = await sanityClient.fetch(ALL_POSTS_QUERY);
+  const posts = await client.fetch(ALL_POSTS_QUERY);
 
   const paths = posts.map((post) => ({
     params: { id: post._id }
