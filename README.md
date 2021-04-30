@@ -13,7 +13,7 @@
 
 ## Updating Production Site
 
-- When pushing code to `main` branch, Vercel will automatically deploy the code to [production site](https://blog-digital-extremes.vercel.app/).
+- When pushing code to `main` branch, Vercel will automatically deploy the code to [production site](https://blog-nandotess.vercel.app/).
 
 ## Localhost
 
