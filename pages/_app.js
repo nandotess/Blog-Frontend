@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Router from 'next/router';
-import Head from 'next/head';
 import NProgress from 'nprogress';
 import { GoogleFonts } from 'next-google-fonts';
-import Page from '../components/Page';
+import Router from 'next/router';
+import Head from 'next/head';
+
+import Page from '@components/Page';
 
 import 'nprogress/nprogress.css';
 

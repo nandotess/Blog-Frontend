@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import Image from 'next/image';
 import styled from 'styled-components';
-import formatDate from '../util/formatDate';
-import { urlForImage } from '../lib/sanity';
-import { device } from '../styles/device';
+
+import formatDate from '@util/formatDate';
+
+import { urlForImage } from '@lib/sanity';
+
+import { device } from '@styles/device';
 
 const Wrapper = styled.article`
   text-align: left;

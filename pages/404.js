@@ -1,5 +1,6 @@
 import React from 'react';
-import HeadMetatags from '../components/HeadMetatags';
+
+import HeadMetatags from '@components/wrapper/HeadMetatags';
 
 const NotFoundPage = () => {
   const title = 'Page not found';

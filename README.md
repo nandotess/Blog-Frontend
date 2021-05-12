@@ -19,7 +19,7 @@
 
 - To run the project on localhost:
   - Execute `npm install` in your terminal.
-  - Rename `.env.SAMPLE` to `.env` and update the values of the variables `NEXT_PUBLIC_SANITY_PROJECT_ID` and `NEXT_PUBLIC_SANITY_API_TOKEN`.
+  - Rename `.env.SAMPLE` to `.env` and update the values of the variables `SANITY_PROJECT_ID` and `SANITY_API_TOKEN`.
   - Execute `npm run dev` in your terminal.
 
 ## TODO

@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { getClient } from '../lib/sanity.server';
-import { ALL_POSTS_QUERY } from '../lib/sanity.queries';
-import HeadMetatags from '../components/HeadMetatags';
-import Posts from '../components/Posts';
+
+import { getClient } from '@lib/sanity.server';
+import { ALL_POSTS_QUERY } from '@lib/sanity.queries';
+
+import HeadMetatags from '@components/wrapper/HeadMetatags';
+import Posts from '@components/Posts';
 
 const IndexPage = ({ posts = [], preview }) => {
   const title = 'Blog';

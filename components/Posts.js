@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import styled from 'styled-components';
-import { device } from '../styles/device';
-import Post from './Post';
+
+import { device } from '@styles/device';
+
+import Post from '@components/Post';
 
 const Row = styled.a`
   border-bottom: 1px solid var(--color-gray-light);

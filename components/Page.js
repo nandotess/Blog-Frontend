@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
-import { device } from '../styles/device';
-import Header from './Header';
-import Footer from './Footer';
+
+import { device } from '@styles/device';
+
+import Header from '@components/wrapper/Header';
+import Footer from '@components/wrapper/Footer';
 
 const GlobalStyles = createGlobalStyle`
   :root {
